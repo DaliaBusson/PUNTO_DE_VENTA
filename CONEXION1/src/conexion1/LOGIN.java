@@ -1,15 +1,12 @@
 package conexion1; //PAQUETERIA A LA QUE PERTENECE
-
-import javax.swing.JOptionPane;
-
-
+import javax.swing.JOptionPane; //Librerias
 public class LOGIN extends javax.swing.JFrame { //CLASE QUE HEREDE DE JFRAME
 
     public LOGIN() {       //Crea el nuevo elemento LOGIN
         initComponents();
-        this.setTitle("ACCESO SISTEMA DE VENTAS");
-        this.setLocationRelativeTo(null);
-        
+        this.setTitle("ACCESO SISTEMA DE VENTAS"); //da nombre a la interfaz
+        this.setLocationRelativeTo(null); //ubica la pantalla en el centro 
+        //setIconImage(new ImageIcon(getClass().getResource("/conexion1.IMAGENES/icon.png")).getImage());
     }
 
     /**
@@ -55,13 +52,14 @@ public class LOGIN extends javax.swing.JFrame { //CLASE QUE HEREDE DE JFRAME
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setIconImage(getIconImage());
         setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/conexion1/IMAGENES/login icon.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 40, -1, -1));
 
-        jButton1.setBackground(new java.awt.Color(153, 153, 153));
+        jButton1.setBackground(new java.awt.Color(0, 0, 102));
         jButton1.setText("SALIR");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -93,6 +91,11 @@ public class LOGIN extends javax.swing.JFrame { //CLASE QUE HEREDE DE JFRAME
                 paswordActionPerformed(evt);
             }
         });
+        pasword.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                paswordKeyPressed(evt);
+            }
+        });
         getContentPane().add(pasword, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 370, 170, 40));
 
         jButton2.setBackground(new java.awt.Color(255, 255, 255));
@@ -115,51 +118,74 @@ public class LOGIN extends javax.swing.JFrame { //CLASE QUE HEREDE DE JFRAME
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-  // BOTON EXIT
+ 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-    System.exit(0);
+    System.exit(0);  //FUNCION DEL BOTON SALIR
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void userActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userActionPerformed
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_userActionPerformed
 
     private void paswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_paswordActionPerformed
-        // TODO add your handling code here:
+    
     }//GEN-LAST:event_paswordActionPerformed
 
-    
-    String USUARIO="admin";
-        String CONTRA="1234";
+ /////////////////////////////// CONTRASEÑAS   
+    String USUARIO="admin";      //Administrador
+    String CONTRA="12345";
+////////////////////////////////
+    String US="user";           //EMPLEADO
+    String CO="0123456789";
+/////////////////////////////////
     private void jButton2KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButton2KeyPressed
-        
-        
+       
+        // VALIDACION
         String passw=new String(pasword.getPassword());
-        
+    
         if((user.getText().equals(USUARIO))&&(passw.equals(CONTRA))){
             INTERFAZ INTER=new INTERFAZ();
             INTER.setVisible(true);
+            dispose();
+        }
+        else{
+           if((user.getText().equals(US))&&(passw.equals(CO))){
+            INTERFAZ2 INTER2=new INTERFAZ2();
+            INTER2.setVisible(true);
             dispose();
         }
         else{
             JOptionPane.showMessageDialog(this, "ERROR DE VALIDACION");
         }  
+        } 
+          
     }//GEN-LAST:event_jButton2KeyPressed
 
     private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
-
-        
-        String passw=new String(pasword.getPassword());
-        
+     
+        ////// VALIDACION
+         String passw=new String(pasword.getPassword());
+    
         if((user.getText().equals(USUARIO))&&(passw.equals(CONTRA))){
             INTERFAZ INTER=new INTERFAZ();
             INTER.setVisible(true);
             dispose();
         }
         else{
-            JOptionPane.showMessageDialog(this, "ERROR DE VALIDACION");
+           if((user.getText().equals(US))&&(passw.equals(CO))){
+            INTERFAZ2 INTER2=new INTERFAZ2();
+            INTER2.setVisible(true);
+            dispose();
         }
+        else{
+            JOptionPane.showMessageDialog(this, "ERROR DE VALIDACION");
+        }  
+        } 
     }//GEN-LAST:event_jButton2MouseClicked
+
+    private void paswordKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_paswordKeyPressed
+       
+    }//GEN-LAST:event_paswordKeyPressed
 
     
     
