@@ -141,7 +141,7 @@ public class LOGIN extends javax.swing.JFrame { //CLASE QUE HEREDE DE JFRAME
     String CONTRA="12345";
 ////////////////////////////////
     String US="user";           //EMPLEADO
-    String CO="0123456789";
+    String CO="0123";
 /////////////////////////////////
     private void jButton2KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButton2KeyPressed
        
