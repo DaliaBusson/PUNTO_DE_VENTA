@@ -20,6 +20,7 @@ public class SYSTEM extends javax.swing.JFrame { //CLASE HEREDADE DEL JFRAME
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
 
         jButton1.setText("SALIR");
         jButton1.addActionListener(new java.awt.event.ActionListener() {

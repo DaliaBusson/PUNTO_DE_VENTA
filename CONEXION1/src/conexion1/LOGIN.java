@@ -66,6 +66,11 @@ public class LOGIN extends javax.swing.JFrame { //CLASE QUE HEREDE DE JFRAME
                 jButton1ActionPerformed(evt);
             }
         });
+        jButton1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jButton1KeyPressed(evt);
+            }
+        });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 10, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
@@ -186,6 +191,10 @@ public class LOGIN extends javax.swing.JFrame { //CLASE QUE HEREDE DE JFRAME
     private void paswordKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_paswordKeyPressed
        
     }//GEN-LAST:event_paswordKeyPressed
+
+    private void jButton1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButton1KeyPressed
+        System.exit(0);
+    }//GEN-LAST:event_jButton1KeyPressed
 
     
     
