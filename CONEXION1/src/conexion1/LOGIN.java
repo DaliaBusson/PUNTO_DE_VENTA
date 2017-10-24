@@ -1,16 +1,22 @@
 package conexion1; //PAQUETERIA A LA QUE PERTENECE
-
-import javax.swing.JOptionPane;
-
+import javax.swing.JOptionPane; //Librerias
+  /*import java.awt.Image;
+   import java.awt.Toolkit;  */
 
 public class LOGIN extends javax.swing.JFrame { //CLASE QUE HEREDE DE JFRAME
 
     public LOGIN() {       //Crea el nuevo elemento LOGIN
         initComponents();
-        this.setTitle("ACCESO SISTEMA DE VENTAS");
-        this.setLocationRelativeTo(null);
+        this.setTitle("ACCESO SISTEMA DE VENTAS"); //da nombre a la interfaz
+        this.setLocationRelativeTo(null); //ubica la pantalla en el centro 
         
     }
+    
+    /*@Override
+    public Image getIconImage() {
+        Image retValue = Toolkit.getDefaultToolkit().getImage(ClassLoader.getSystemResource("conexion1.IMAGENES/logohp.png"));
+        return retValue;
+    }*/
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -55,17 +61,24 @@ public class LOGIN extends javax.swing.JFrame { //CLASE QUE HEREDE DE JFRAME
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setIconImage(getIconImage());
+        setIconImages(getIconImages());
         setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/conexion1/IMAGENES/login icon.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 40, -1, -1));
 
-        jButton1.setBackground(new java.awt.Color(153, 153, 153));
+        jButton1.setBackground(new java.awt.Color(0, 0, 102));
         jButton1.setText("SALIR");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
+            }
+        });
+        jButton1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jButton1KeyPressed(evt);
             }
         });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 10, -1, -1));
@@ -93,6 +106,11 @@ public class LOGIN extends javax.swing.JFrame { //CLASE QUE HEREDE DE JFRAME
                 paswordActionPerformed(evt);
             }
         });
+        pasword.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                paswordKeyPressed(evt);
+            }
+        });
         getContentPane().add(pasword, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 370, 170, 40));
 
         jButton2.setBackground(new java.awt.Color(255, 255, 255));
@@ -115,25 +133,30 @@ public class LOGIN extends javax.swing.JFrame { //CLASE QUE HEREDE DE JFRAME
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-  // BOTON EXIT
+ 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-    System.exit(0);
+    System.exit(0);  //FUNCION DEL BOTON SALIR
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void userActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userActionPerformed
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_userActionPerformed
 
     private void paswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_paswordActionPerformed
-        // TODO add your handling code here:
+    
     }//GEN-LAST:event_paswordActionPerformed
 
+ /////////////////////////////// CONTRASEÑAS   
+    String USUARIO="admin";      //Administrador
+    String CONTRA="12345";
+////////////////////////////////
+    String US="user";           //EMPLEADO
+    String CO="0123";
+/////////////////////////////////
     
-    String USUARIO="admin";
-        String CONTRA="1234";
     private void jButton2KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButton2KeyPressed
-        
-        
+       
+        // VALIDACION
         String passw=new String(pasword.getPassword());
         
         if((user.getText().equals(USUARIO))&&(passw.equals(CONTRA))){
@@ -142,24 +165,51 @@ public class LOGIN extends javax.swing.JFrame { //CLASE QUE HEREDE DE JFRAME
             dispose();
         }
         else{
+           if((user.getText().equals(US))&&(passw.equals(CO))){
+            INTERFAZ2 INTER2=new INTERFAZ2();
+            INTER2.setVisible(true);
+            dispose();
+        }
+        else{
             JOptionPane.showMessageDialog(this, "ERROR DE VALIDACION");
+            user.setText(null);
+            pasword.setText(null);
         }  
+        } 
+          
     }//GEN-LAST:event_jButton2KeyPressed
 
     private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
-
-        
-        String passw=new String(pasword.getPassword());
-        
+     
+        ////// VALIDACION
+         String passw=new String(pasword.getPassword());
+    
         if((user.getText().equals(USUARIO))&&(passw.equals(CONTRA))){
             INTERFAZ INTER=new INTERFAZ();
             INTER.setVisible(true);
             dispose();
         }
         else{
-            JOptionPane.showMessageDialog(this, "ERROR DE VALIDACION");
+           if((user.getText().equals(US))&&(passw.equals(CO))){
+            INTERFAZ2 INTER2=new INTERFAZ2();
+            INTER2.setVisible(true);
+            dispose();
         }
+        else{
+            JOptionPane.showMessageDialog(this, "ERROR DE VALIDACION");
+            user.setText(null);
+            pasword.setText(null);
+        }  
+        } 
     }//GEN-LAST:event_jButton2MouseClicked
+
+    private void paswordKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_paswordKeyPressed
+       
+    }//GEN-LAST:event_paswordKeyPressed
+
+    private void jButton1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButton1KeyPressed
+        System.exit(0);
+    }//GEN-LAST:event_jButton1KeyPressed
 
     
     
@@ -207,3 +257,5 @@ public class LOGIN extends javax.swing.JFrame { //CLASE QUE HEREDE DE JFRAME
     private javax.swing.JTextField user;
     // End of variables declaration//GEN-END:variables
 }
+
+// MODULO TERMINADO
