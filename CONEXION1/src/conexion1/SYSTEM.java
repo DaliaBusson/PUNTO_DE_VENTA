@@ -66,18 +66,18 @@ public class SYSTEM extends javax.swing.JFrame { //CLASE HEREDADE DEL JFRAME
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 0, -1, -1));
 
         jLabel1.setFont(new java.awt.Font("Lucida Grande", 1, 24)); // NOI18N
-        jLabel1.setText("SYSTEMA DE VENTAS");
+        jLabel1.setText("SISTEMA DE VENTAS");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null}
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
+                "CODIGO", "PRODUCTO", "CANTIDAD", "PRESENTACION", "PRECIO"
             }
         ));
         jScrollPane1.setViewportView(jTable1);
@@ -108,7 +108,7 @@ public class SYSTEM extends javax.swing.JFrame { //CLASE HEREDADE DEL JFRAME
                 {null, null, null, null}
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
+                "CODIGO", "PRODUCTO", "PRESENTACION", "PRECIO"
             }
         ));
         jScrollPane2.setViewportView(jTable2);
@@ -122,9 +122,19 @@ public class SYSTEM extends javax.swing.JFrame { //CLASE HEREDADE DEL JFRAME
         getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 170, 120, -1));
 
         jButton7.setText("AGREGAR NUEVO");
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 350, -1, -1));
 
         jButton8.setText("ELIMIAR");
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 400, -1, -1));
 
         jLabel5.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
@@ -153,6 +163,18 @@ public class SYSTEM extends javax.swing.JFrame { //CLASE HEREDADE DEL JFRAME
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        AGREGAR AG = new AGREGAR();
+        AG.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+        ELIMINAR EL = new ELIMINAR();
+        EL.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_jButton8ActionPerformed
 
     
     public static void main(String args[]) {

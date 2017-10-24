@@ -1,13 +1,22 @@
 package conexion1; //PAQUETERIA A LA QUE PERTENECE
 import javax.swing.JOptionPane; //Librerias
+  /*import java.awt.Image;
+   import java.awt.Toolkit;  */
+
 public class LOGIN extends javax.swing.JFrame { //CLASE QUE HEREDE DE JFRAME
 
     public LOGIN() {       //Crea el nuevo elemento LOGIN
         initComponents();
         this.setTitle("ACCESO SISTEMA DE VENTAS"); //da nombre a la interfaz
         this.setLocationRelativeTo(null); //ubica la pantalla en el centro 
-        //setIconImage(new ImageIcon(getClass().getResource("/conexion1.IMAGENES/icon.png")).getImage());
+        
     }
+    
+    /*@Override
+    public Image getIconImage() {
+        Image retValue = Toolkit.getDefaultToolkit().getImage(ClassLoader.getSystemResource("conexion1.IMAGENES/logohp.png"));
+        return retValue;
+    }*/
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -53,6 +62,7 @@ public class LOGIN extends javax.swing.JFrame { //CLASE QUE HEREDE DE JFRAME
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setIconImage(getIconImage());
+        setIconImages(getIconImages());
         setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -143,11 +153,12 @@ public class LOGIN extends javax.swing.JFrame { //CLASE QUE HEREDE DE JFRAME
     String US="user";           //EMPLEADO
     String CO="0123";
 /////////////////////////////////
+    
     private void jButton2KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButton2KeyPressed
        
         // VALIDACION
         String passw=new String(pasword.getPassword());
-    
+        
         if((user.getText().equals(USUARIO))&&(passw.equals(CONTRA))){
             INTERFAZ INTER=new INTERFAZ();
             INTER.setVisible(true);
@@ -161,6 +172,8 @@ public class LOGIN extends javax.swing.JFrame { //CLASE QUE HEREDE DE JFRAME
         }
         else{
             JOptionPane.showMessageDialog(this, "ERROR DE VALIDACION");
+            user.setText(null);
+            pasword.setText(null);
         }  
         } 
           
@@ -184,6 +197,8 @@ public class LOGIN extends javax.swing.JFrame { //CLASE QUE HEREDE DE JFRAME
         }
         else{
             JOptionPane.showMessageDialog(this, "ERROR DE VALIDACION");
+            user.setText(null);
+            pasword.setText(null);
         }  
         } 
     }//GEN-LAST:event_jButton2MouseClicked
@@ -242,3 +257,5 @@ public class LOGIN extends javax.swing.JFrame { //CLASE QUE HEREDE DE JFRAME
     private javax.swing.JTextField user;
     // End of variables declaration//GEN-END:variables
 }
+
+// MODULO TERMINADO
