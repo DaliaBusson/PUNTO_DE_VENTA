@@ -1,6 +1,6 @@
 package conexion1; //PAQUETERIA A LA QUE PERTENECE
-import javax.swing.JOptionPane; //Librerias
-  /*import java.awt.Image;
+ import javax.swing.JOptionPane; //Librerias
+/*import java.awt.Image;
    import java.awt.Toolkit;  */
 
 public class LOGIN extends javax.swing.JFrame { //CLASE QUE HEREDE DE JFRAME
@@ -12,7 +12,7 @@ public class LOGIN extends javax.swing.JFrame { //CLASE QUE HEREDE DE JFRAME
         
     }
     
-    /*@Override
+     /*@Override
     public Image getIconImage() {
         Image retValue = Toolkit.getDefaultToolkit().getImage(ClassLoader.getSystemResource("conexion1.IMAGENES/logohp.png"));
         return retValue;
