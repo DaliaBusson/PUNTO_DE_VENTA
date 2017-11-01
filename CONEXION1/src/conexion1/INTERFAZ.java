@@ -37,6 +37,11 @@ public class INTERFAZ extends javax.swing.JFrame { //clase heredada de jframe
                 jButton1ActionPerformed(evt);
             }
         });
+        jButton1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jButton1KeyPressed(evt);
+            }
+        });
 
         jLabel2.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         jLabel2.setText("ADMINISTRADOR");
@@ -47,6 +52,11 @@ public class INTERFAZ extends javax.swing.JFrame { //clase heredada de jframe
                 jButton2ActionPerformed(evt);
             }
         });
+        jButton2.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jButton2KeyPressed(evt);
+            }
+        });
 
         jButton3.setText("SALIR");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -54,11 +64,21 @@ public class INTERFAZ extends javax.swing.JFrame { //clase heredada de jframe
                 jButton3ActionPerformed(evt);
             }
         });
+        jButton3.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jButton3KeyPressed(evt);
+            }
+        });
 
         jButton4.setText("CERRAR SESION");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
+            }
+        });
+        jButton4.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jButton4KeyPressed(evt);
             }
         });
 
@@ -124,6 +144,28 @@ public class INTERFAZ extends javax.swing.JFrame { //clase heredada de jframe
         lo.setVisible(true);
         dispose();
     }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButton1KeyPressed
+        SYSTEM sys=new SYSTEM();
+        sys.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_jButton1KeyPressed
+
+    private void jButton2KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButton2KeyPressed
+        SYSTEM2 sys2= new SYSTEM2();
+        sys2.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_jButton2KeyPressed
+
+    private void jButton4KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButton4KeyPressed
+         LOGIN lo=new LOGIN();
+         lo.setVisible(true);
+         dispose();
+    }//GEN-LAST:event_jButton4KeyPressed
+
+    private void jButton3KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButton3KeyPressed
+        System.exit(0);
+    }//GEN-LAST:event_jButton3KeyPressed
 
     
     public static void main(String args[]) {

@@ -171,7 +171,7 @@ public class LOGIN extends javax.swing.JFrame { //CLASE QUE HEREDE DE JFRAME
             dispose();
         }
         else{
-            JOptionPane.showMessageDialog(this, "ERROR DE VALIDACION");
+            JOptionPane.showMessageDialog(this, "CONTRASEÑA Y/O USUARIO INCORRECTOS");
             user.setText(null);
             pasword.setText(null);
         }  
@@ -196,7 +196,7 @@ public class LOGIN extends javax.swing.JFrame { //CLASE QUE HEREDE DE JFRAME
             dispose();
         }
         else{
-            JOptionPane.showMessageDialog(this, "ERROR DE VALIDACION");
+            JOptionPane.showMessageDialog(this, "CONTRASEÑA Y/O USUARIO INCORRECTOS");
             user.setText(null);
             pasword.setText(null);
         }  
