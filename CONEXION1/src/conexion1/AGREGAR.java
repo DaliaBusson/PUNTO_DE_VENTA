@@ -1,4 +1,8 @@
 package conexion1;
+import java.sql.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.JOptionPane;
 
 public class AGREGAR extends javax.swing.JFrame {
 
@@ -91,6 +95,24 @@ public class AGREGAR extends javax.swing.JFrame {
         jLabel4.setFont(new java.awt.Font("Lucida Grande", 3, 14)); // NOI18N
         jLabel4.setText("CODIGO");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 50, -1, -1));
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+        jTextField3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField3ActionPerformed(evt);
+            }
+        });
+=======
+>>>>>>> c7a49cd94100f8edfa020e793d25120129aebd30
+=======
+>>>>>>> c7a49cd94100f8edfa020e793d25120129aebd30
+=======
+>>>>>>> c7a49cd94100f8edfa020e793d25120129aebd30
+=======
+>>>>>>> c7a49cd94100f8edfa020e793d25120129aebd30
         getContentPane().add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 70, 130, 40));
 
         jLabel5.setFont(new java.awt.Font("Lucida Grande", 3, 14)); // NOI18N
@@ -115,6 +137,23 @@ public class AGREGAR extends javax.swing.JFrame {
         getContentPane().add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 180, 150, 40));
 
         jButton3.setText(" AGREGAR");
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+=======
+>>>>>>> c7a49cd94100f8edfa020e793d25120129aebd30
+=======
+>>>>>>> c7a49cd94100f8edfa020e793d25120129aebd30
+=======
+>>>>>>> c7a49cd94100f8edfa020e793d25120129aebd30
+=======
+>>>>>>> c7a49cd94100f8edfa020e793d25120129aebd30
         getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 190, -1, -1));
 
         pack();
@@ -134,6 +173,46 @@ public class AGREGAR extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField5ActionPerformed
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // BOTON INSERTAR
+        
+        conectar cc=new conectar();
+        Connection cn = null;
+        try {
+            cn = cc.conexion();
+        } catch (SQLException ex) {
+            Logger.getLogger(AGREGAR.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        try{
+            PreparedStatement pst = cn.prepareStatement("INSERT INTO productos(id_producto, producto,"
+                    + "cantidad, presentacion, precio) VALUES (?, ?, ?, ?, ?)");
+            pst.setString(1, jTextField3.getText());
+            pst.setString(2, jTextField1.getText());
+            pst.setString(3, jTextField4.getText());
+            pst.setString(4, jTextField5.getText());
+            pst.setString(5, jTextField6.getText());
+            
+        }catch(Exception e){
+             JOptionPane.showMessageDialog(null,"ERROR");
+        }
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField3ActionPerformed
+
+=======
+>>>>>>> c7a49cd94100f8edfa020e793d25120129aebd30
+=======
+>>>>>>> c7a49cd94100f8edfa020e793d25120129aebd30
+=======
+>>>>>>> c7a49cd94100f8edfa020e793d25120129aebd30
+=======
+>>>>>>> c7a49cd94100f8edfa020e793d25120129aebd30
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">

@@ -11,12 +11,17 @@ public class LOGIN extends javax.swing.JFrame { //CLASE QUE HEREDE DE JFRAME
         this.setLocationRelativeTo(null); //ubica la pantalla en el centro 
         
     }
+<<<<<<< HEAD
+      
+  
+=======
     
      /*@Override
     public Image getIconImage() {
         Image retValue = Toolkit.getDefaultToolkit().getImage(ClassLoader.getSystemResource("conexion1.IMAGENES/logohp.png"));
         return retValue;
     }*/
+>>>>>>> c7a49cd94100f8edfa020e793d25120129aebd30
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -139,11 +144,11 @@ public class LOGIN extends javax.swing.JFrame { //CLASE QUE HEREDE DE JFRAME
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void userActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userActionPerformed
-
+     // NULL
     }//GEN-LAST:event_userActionPerformed
 
     private void paswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_paswordActionPerformed
-    
+    // NULL
     }//GEN-LAST:event_paswordActionPerformed
 
  /////////////////////////////// CONTRASEÑAS   
