@@ -155,21 +155,6 @@
       </Constraints>
     </Component>
     <Component class="javax.swing.JTextField" name="jTextField3">
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField3ActionPerformed"/>
-      </Events>
-=======
->>>>>>> c7a49cd94100f8edfa020e793d25120129aebd30
-=======
->>>>>>> c7a49cd94100f8edfa020e793d25120129aebd30
-=======
->>>>>>> c7a49cd94100f8edfa020e793d25120129aebd30
-=======
->>>>>>> c7a49cd94100f8edfa020e793d25120129aebd30
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
           <AbsoluteConstraints x="400" y="70" width="130" height="40"/>
@@ -243,21 +228,6 @@
       <Properties>
         <Property name="text" type="java.lang.String" value=" AGREGAR"/>
       </Properties>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton3ActionPerformed"/>
-      </Events>
-=======
->>>>>>> c7a49cd94100f8edfa020e793d25120129aebd30
-=======
->>>>>>> c7a49cd94100f8edfa020e793d25120129aebd30
-=======
->>>>>>> c7a49cd94100f8edfa020e793d25120129aebd30
-=======
->>>>>>> c7a49cd94100f8edfa020e793d25120129aebd30
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
           <AbsoluteConstraints x="310" y="190" width="-1" height="-1"/>

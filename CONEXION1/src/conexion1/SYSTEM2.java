@@ -62,12 +62,6 @@ public class SYSTEM2 extends javax.swing.JFrame {
 
         jLabel2.setText("BUSCAR:");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, -1, -1));
-
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
-            }
-        });
         getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 50, 380, 30));
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
@@ -128,13 +122,6 @@ public class SYSTEM2 extends javax.swing.JFrame {
         i.setVisible(true);
         dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
-
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        //BUSCADOR DE PRODUCTOS
-        
-        
-        
-    }//GEN-LAST:event_jTextField1ActionPerformed
 
     
     public static void main(String args[]) {
