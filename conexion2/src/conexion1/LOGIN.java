@@ -1,9 +1,11 @@
 package conexion1; //PAQUETERIA A LA QUE PERTENECE
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
  import javax.swing.JOptionPane; //Librerias
 /*import java.awt.Image;
    import java.awt.Toolkit;  */
 
-public class LOGIN extends javax.swing.JFrame { //CLASE QUE HEREDE DE JFRAME
+public class LOGIN extends javax.swing.JFrame implements KeyListener { //CLASE QUE HEREDE DE JFRAME
 
     public LOGIN() {       //Crea el nuevo elemento LOGIN
         initComponents();
@@ -64,6 +66,11 @@ public class LOGIN extends javax.swing.JFrame { //CLASE QUE HEREDE DE JFRAME
         setIconImage(getIconImage());
         setIconImages(getIconImages());
         setUndecorated(true);
+        addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                formKeyPressed(evt);
+            }
+        });
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/conexion1/IMAGENES/login icon.png"))); // NOI18N
@@ -156,7 +163,9 @@ public class LOGIN extends javax.swing.JFrame { //CLASE QUE HEREDE DE JFRAME
     
     private void jButton2KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButton2KeyPressed
        
-        // VALIDACION
+      
+     
+     /*   // VALIDACION
         String passw=new String(pasword.getPassword());
         
         if((user.getText().equals(USUARIO))&&(passw.equals(CONTRA))){
@@ -175,7 +184,7 @@ public class LOGIN extends javax.swing.JFrame { //CLASE QUE HEREDE DE JFRAME
             user.setText(null);
             pasword.setText(null);
         }  
-        } 
+        } */
           
     }//GEN-LAST:event_jButton2KeyPressed
 
@@ -210,6 +219,10 @@ public class LOGIN extends javax.swing.JFrame { //CLASE QUE HEREDE DE JFRAME
     private void jButton1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButton1KeyPressed
         System.exit(0);
     }//GEN-LAST:event_jButton1KeyPressed
+
+    private void formKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_formKeyPressed
+        
+    }//GEN-LAST:event_formKeyPressed
 
     
     
@@ -256,6 +269,24 @@ public class LOGIN extends javax.swing.JFrame { //CLASE QUE HEREDE DE JFRAME
     private javax.swing.JPasswordField pasword;
     private javax.swing.JTextField user;
     // End of variables declaration//GEN-END:variables
-}
 
-// MODULO TERMINADO
+    
+ ////////////////////////////////////////////// DETECCION DE TECLAS /////////////
+    //@Override
+    public void keyTyped(KeyEvent e) { 
+    }
+
+    //@Override
+    public void keyPressed(KeyEvent e) {
+        if(e.getKeyCode()==13){
+       JOptionPane.showMessageDialog(this,"SI JALO");
+        }
+    }
+
+    //@Override
+    public void keyReleased(KeyEvent e) {   
+    }
+}
+///////////////////////////////////////////////////////////////////////////////
+
+// MODULO
