@@ -165,7 +165,7 @@ public class LOGIN extends javax.swing.JFrame implements KeyListener { //CLASE Q
        
       
      
-     /*   // VALIDACION
+     // VALIDACION
         String passw=new String(pasword.getPassword());
         
         if((user.getText().equals(USUARIO))&&(passw.equals(CONTRA))){
@@ -184,7 +184,7 @@ public class LOGIN extends javax.swing.JFrame implements KeyListener { //CLASE Q
             user.setText(null);
             pasword.setText(null);
         }  
-        } */
+        } 
           
     }//GEN-LAST:event_jButton2KeyPressed
 
@@ -276,7 +276,7 @@ public class LOGIN extends javax.swing.JFrame implements KeyListener { //CLASE Q
     public void keyTyped(KeyEvent e) { 
     }
 
-    //@Override
+    @Override
     public void keyPressed(KeyEvent e) {
         if(e.getKeyCode()==13){
        JOptionPane.showMessageDialog(this,"SI JALO");

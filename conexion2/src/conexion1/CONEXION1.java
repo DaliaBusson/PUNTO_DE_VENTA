@@ -14,6 +14,9 @@ public Image getIconImage() {
         
     LOGIN windows=new LOGIN();
     windows.setVisible(true);     //abilita la ventana DE LOGIN
+    
+    
+    
     }
 }
 // MODULO TERMINADO!!!
