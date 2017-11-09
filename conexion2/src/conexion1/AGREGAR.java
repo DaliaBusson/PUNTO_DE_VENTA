@@ -3,6 +3,8 @@ import java.sql.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
+import javax.swing.table.DefaultTableModel;
+import java.sql.*;
 
 public class AGREGAR extends javax.swing.JFrame {
 
@@ -10,6 +12,33 @@ public class AGREGAR extends javax.swing.JFrame {
         initComponents();
         this.setTitle("SISTEMA");
         this.setLocationRelativeTo(null);
+        mostrardatos("");
+    }
+    
+    public void mostrardatos(String valor){
+        conectar cc=new conectar();
+        try {
+            Connection cn=cc.conexion();
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(AGREGAR.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        DefaultTableModel modelo=new DefaultTableModel();
+        
+        modelo.addColumn("ID");
+        modelo.addColumn("PRODUCTO");
+        modelo.addColumn("CANTIDAD");
+        modelo.addColumn("PRESENTACION");
+        modelo.addColumn("PRECIO");
+        
+        jTable1.setModel(modelo);
+        String sql="";
+        if(valor.equals("")){
+          sql="SELECT * FROM productos;";   
+        }
+        else{
+         //sql="SELECT "+valor+""; 
+        }
+        
     }
 
     /**
@@ -68,13 +97,13 @@ public class AGREGAR extends javax.swing.JFrame {
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null}
+                {},
+                {},
+                {},
+                {}
             },
             new String [] {
-                "CODIGO", "PRODUCTO", "CANTIDAD", "PRESENTACION", "PRECIO"
+
             }
         ));
         jTable1.setSize(new java.awt.Dimension(550, 64));
@@ -90,6 +119,17 @@ public class AGREGAR extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Lucida Grande", 3, 14)); // NOI18N
         jLabel3.setText("CONSULTA: ");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 260, -1, -1));
+
+        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField2ActionPerformed(evt);
+            }
+        });
+        jTextField2.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jTextField2KeyPressed(evt);
+            }
+        });
         getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 250, 340, 40));
 
         jLabel4.setFont(new java.awt.Font("Lucida Grande", 3, 14)); // NOI18N
@@ -163,15 +203,26 @@ public class AGREGAR extends javax.swing.JFrame {
         
         int a=pst.executeUpdate();
         if(a>0){
-          JOptionPane.showMessageDialog(null, "Valor insertado");  
+          JOptionPane.showMessageDialog(null, "PRODUCTO AGREGADO");  
         }
         else{
-            JOptionPane.showMessageDialog(null, "error"); 
+            JOptionPane.showMessageDialog(null, "ERROR DE COMUNICACION 4004 Data Base Server"); 
         }
         
         }catch(Exception e){
         }
     }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField2ActionPerformed
+
+    private void jTextField2KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField2KeyPressed
+        // CONSULTA AL PRESIONAR TECLADO 
+        /*
+        
+        */
+    }//GEN-LAST:event_jTextField2KeyPressed
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
