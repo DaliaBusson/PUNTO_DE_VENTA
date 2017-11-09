@@ -1,4 +1,8 @@
 package conexion1;
+import java.sql.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.JOptionPane;
 
 public class AGREGAR extends javax.swing.JFrame {
 
@@ -115,6 +119,11 @@ public class AGREGAR extends javax.swing.JFrame {
         getContentPane().add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 180, 150, 40));
 
         jButton3.setText(" AGREGAR");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 190, -1, -1));
 
         pack();
@@ -133,6 +142,36 @@ public class AGREGAR extends javax.swing.JFrame {
     private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField5ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // Boton agregar
+        conectar cc=new conectar();
+        Connection cn = null;
+        try {
+            cn = cc.conexion();
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(AGREGAR.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        try{
+        PreparedStatement pst=cn.prepareStatement("INSERT INTO productos(producto, cantidad, presentacion, precio)"
+                + "VALUES(?, ?, ?, ?);");
+        pst.setString(1,jTextField1.getText());
+        pst.setString(2,jTextField4.getText());
+        pst.setString(3,jTextField5.getText());
+        pst.setString(4,jTextField6.getText());
+        
+        int a=pst.executeUpdate();
+        if(a>0){
+          JOptionPane.showMessageDialog(null, "Valor insertado");  
+        }
+        else{
+            JOptionPane.showMessageDialog(null, "error"); 
+        }
+        
+        }catch(Exception e){
+        }
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
