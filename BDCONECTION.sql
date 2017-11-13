@@ -1,8 +1,8 @@
 # BASE DE DATOS CONECTION
 
  # CREACION DE LA BASE DE DATOS
-       CREATE DATABASE BDC;
-       USE BDC;
+       CREATE DATABASE DBC;
+       USE DBC;
  
  # CREACION DE LAS TABLAS
 
@@ -20,7 +20,32 @@ CREATE TABLE productos(
       precio DOUBLE
 );
 
+CREATE TABLE proveedores(
+  id_proveedor INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  nombre_proveedor VARCHAR(40),
+  telefono INT,
+  direccion VARCHAR(40),
+  id_producto INT,
+  
+  CONSTRAINT proveedores_producto
+  FOREIGN KEY (id_producto)
+  REFERENCES productos(id_producto)
+);
+
+CREATE TABLE inventario(
+ id_inventario INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+ id_producto INT,
+ fecha_provedor DATE,
+ fecha_agotado DATE,
+ 
+ CONSTRAINT inventario_productos
+ FOREIGN KEY (id_producto)
+ REFERENCES productos(id_producto)
+);
+
  #///////////////////////////////////////////////////////////////////// PROCEDIMIENTOS ALMACENADOS //////////////////////////////////////////////////////////////////
+ 
+ # /////////////////////////////////////////////////////////////////////////// PRODUCTOS //////////////////////////////////////////////////////////////////////////////////////////
  
   # PROCEDIMIENTO PARA INSERTAR
      DELIMITER $$
@@ -73,7 +98,24 @@ CREATE TABLE productos(
           END $$
       DELIMITER $$
       
-      #   DROP DATABASE CONECTION;
+# ////////////////////////////////////////////////////////////////////////////////// PROVEEDORES ////////////////////////////////////////////////////////////////////////////
+
+# PROCEDIMIENTO PARA INSERTAR
+   DELIMITER $$
+      CREATE PROCEDURE Insertar_proveedor
+      ( IN PRODUCTO VARCHAR(40),
+		IN CANTIDAD INT,
+        IN PRESENTACION VARCHAR(40),
+        IN PRECIO DOUBLE  )
+        BEGIN
+            INSERT INTO productos( productos, cantidad, presentacion, precio)
+            VALUES ( PRODUCTO, CANTIDAD, PRESENTACION, PRECIO);
+        END $$
+     DELIMITER $$
+     
+     
+      
+      #   DROP DATABASE DBC;
     
 # ///////////////////////////////////////////////////////////////////////////// TRIGGERS //////////////////////////////////////////////////////////////////////////////////////////////////////
-
+SELECT * FROM productos;
