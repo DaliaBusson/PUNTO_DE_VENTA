@@ -1,9 +1,7 @@
 package conexion1; //PAQUETERIA A LA QUE PERTENECE
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
- import javax.swing.JOptionPane; //Librerias
-/*import java.awt.Image;
-   import java.awt.Toolkit;  */
+ import javax.swing.JOptionPane; //Libreria
 
 public class LOGIN extends javax.swing.JFrame implements KeyListener { //CLASE QUE HEREDE DE JFRAME
 
@@ -14,17 +12,13 @@ public class LOGIN extends javax.swing.JFrame implements KeyListener { //CLASE Q
         
     }
     
-     /*@Override
+    /*@Override
     public Image getIconImage() {
-        Image retValue = Toolkit.getDefaultToolkit().getImage(ClassLoader.getSystemResource("conexion1.IMAGENES/logohp.png"));
-        return retValue;
+    Image retValue = Toolkit.getDefaultToolkit().getImage(ClassLoader.getSystemResource("conexion1.IMAGENES/logohp.png"));
+    return retValue;
     }*/
-
-    /**
-     * This method is called from within the constructor to initialize the form.
-     * WARNING: Do NOT modify this code. The content of this method is always
-     * regenerate by the Form Editor.
-     */
+    
+    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -162,10 +156,10 @@ public class LOGIN extends javax.swing.JFrame implements KeyListener { //CLASE Q
 /////////////////////////////////
     
     private void jButton2KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButton2KeyPressed
-       
-      
      
-     // VALIDACION
+
+
+// VALIDACION
         String passw=new String(pasword.getPassword());
         
         if((user.getText().equals(USUARIO))&&(passw.equals(CONTRA))){
@@ -217,7 +211,7 @@ public class LOGIN extends javax.swing.JFrame implements KeyListener { //CLASE Q
     }//GEN-LAST:event_paswordKeyPressed
 
     private void jButton1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButton1KeyPressed
-        System.exit(0);
+       // EVENTO DEL BOTON SALIR CON TECLA
     }//GEN-LAST:event_jButton1KeyPressed
 
     private void formKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_formKeyPressed

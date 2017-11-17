@@ -37,6 +37,7 @@ public class SYSTEM extends javax.swing.JFrame { //CLASE HEREDADE DEL JFRAME
         jLabel5 = new javax.swing.JLabel();
         jButton10 = new javax.swing.JButton();
         jButton11 = new javax.swing.JButton();
+        jButton12 = new javax.swing.JButton();
 
         jLabel3.setText("jLabel3");
 
@@ -127,7 +128,7 @@ public class SYSTEM extends javax.swing.JFrame { //CLASE HEREDADE DEL JFRAME
                 jButton7ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 350, -1, -1));
+        getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 340, -1, -1));
 
         jButton8.setText("ELIMIAR");
         jButton8.addActionListener(new java.awt.event.ActionListener() {
@@ -135,7 +136,7 @@ public class SYSTEM extends javax.swing.JFrame { //CLASE HEREDADE DEL JFRAME
                 jButton8ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 400, -1, -1));
+        getContentPane().add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 420, -1, -1));
 
         jLabel5.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         jLabel5.setText("PRODUCTOS");
@@ -146,6 +147,15 @@ public class SYSTEM extends javax.swing.JFrame { //CLASE HEREDADE DEL JFRAME
 
         jButton11.setText("COBRAR");
         getContentPane().add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 250, -1, -1));
+
+        jButton12.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        jButton12.setText("ACTUALIZAR ");
+        jButton12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton12ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 380, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -175,6 +185,12 @@ public class SYSTEM extends javax.swing.JFrame { //CLASE HEREDADE DEL JFRAME
         EL.setVisible(true);
         dispose();
     }//GEN-LAST:event_jButton8ActionPerformed
+
+    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
+        ACTUALIZAR act =new ACTUALIZAR();
+        act.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_jButton12ActionPerformed
 
     
     public static void main(String args[]) {
@@ -213,6 +229,7 @@ public class SYSTEM extends javax.swing.JFrame { //CLASE HEREDADE DEL JFRAME
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
+    private javax.swing.JButton jButton12;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
