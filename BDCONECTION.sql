@@ -80,7 +80,7 @@ CREATE TABLE inventario(
         IN PRESENTACION VARCHAR(40),
         IN PRECIO DOUBLE  )
         BEGIN
-            INSERT INTO productos( productos, cantidad, presentacion, precio)
+            INSERT INTO productos( producto, cantidad, presentacion, precio)
             VALUES ( PRODUCTO, CANTIDAD, PRESENTACION, PRECIO);
         END $$
      DELIMITER $$
@@ -119,7 +119,7 @@ CREATE TABLE inventario(
         ( IN ID INT,
           IN PRODUCTO VARCHAR(40)  )
           BEGIN
-          SELECT * FROM productos WHERE id_producto=ID OR producto=PRODUCTO;
+          SELECT * FROM productos WHERE id_producto LIKE ID OR producto LIKE PRODUCTO;
           END $$
       DELIMITER $$
       
