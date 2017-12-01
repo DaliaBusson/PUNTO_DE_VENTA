@@ -1,0 +1,309 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="slaes system" version="4">
+  <OBJECT>
+    <ID name="slaes system" mc="Standard.Package" uid="ad563d24-43c4-4b2b-9279-a1f3fb636882"/>
+    <PID name="SLAES SYSTEM" mc="Standard.Project" uid="f867b5ba-5a3b-41c5-9727-8cbaf0a76093"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[slaes system]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="BPMN" mc="Standard.BpmnBehavior" uid="16dd3174-b167-429a-94c3-c7c9c19d7373"/>
+      </COMP>
+      <COMP relation="Declared">
+        <OBJECT>
+          <ID name="METOD MAIN" mc="Standard.Instance" uid="22a7f38f-82ed-4ce9-a634-4d167ad6f3bb"/>
+          <ATTRIBUTES>
+            <ATT name="IsConstant">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="Name"><![CDATA[METOD MAIN]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Slot">
+              <OBJECT>
+                <ID name="OPTION" mc="Standard.AttributeLink" uid="74e21362-96d4-4bfe-933a-1b53e35ae121"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[NULL]]></ATT>
+                  <ATT name="Name"><![CDATA[OPTION]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Infrastructure.Note" uid="0dcab6af-d3a5-41e7-981a-d7e75504768b"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"></ATT>
+                        <ATT name="MimeType"></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="ACCES" mc="Standard.AttributeLink" uid="8f15949f-1495-4aa9-800f-4b1ca0452035"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[0]]></ATT>
+                  <ATT name="Name"><![CDATA[ACCES]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Infrastructure.Note" uid="d0e282a6-16af-4943-b0f1-b8909fc1ac42"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"></ATT>
+                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="LOGIN" mc="Standard.Instance" uid="a3ce4167-b04d-4ccc-8d38-ec0bccb75b8b"/>
+          <ATTRIBUTES>
+            <ATT name="IsConstant">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="Name"><![CDATA[LOGIN]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Slot">
+              <OBJECT>
+                <ID name="NAME" mc="Standard.AttributeLink" uid="4674bf17-bcec-4ef4-a522-34fb2bfc5d18"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"><![CDATA[NAME]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="PASWOORD" mc="Standard.AttributeLink" uid="641efc5b-7517-45af-8804-ed6ce50c5159"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"><![CDATA[PASWOORD]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="USER" mc="Standard.AttributeLink" uid="865d5bc4-8f7f-47ad-a611-964386c04b6d"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"><![CDATA[USER]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="ACCES" mc="Standard.AttributeLink" uid="92816fc9-cac1-46d1-8d81-6584b27a6011"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"><![CDATA[ACCES]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="SALES" mc="Standard.Instance" uid="f9769a87-02c3-48fd-b329-3066925fb53f"/>
+          <ATTRIBUTES>
+            <ATT name="IsConstant">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="Name"><![CDATA[SALES]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Slot">
+              <OBJECT>
+                <ID name="PRODUCT" mc="Standard.AttributeLink" uid="3de106ac-897d-4bd7-8fd3-99c15d6f1db3"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"><![CDATA[PRODUCT]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="PRICE" mc="Standard.AttributeLink" uid="675fcccd-9b21-4801-8846-54d1a4295ea7"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"><![CDATA[PRICE]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="CODE" mc="Standard.AttributeLink" uid="ec5bf041-53b7-419f-98bd-0bad594b470b"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"><![CDATA[CODE]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="TYPE" mc="Standard.AttributeLink" uid="ce5ebe4f-9ca9-4a70-b803-7e2d54dd721b"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"><![CDATA[TYPE]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="NUMBER_PICES" mc="Standard.AttributeLink" uid="b96f5e6a-4bab-4bfd-839b-11da5cf6dc81"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"><![CDATA[NUMBER_PICES]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Infrastructure.Note" uid="66a71120-4bf3-4654-8989-8da24074026f"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[<Enter note text here>]]></ATT>
+                        <ATT name="MimeType"></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="QUERY" mc="Standard.AttributeLink" uid="89daf311-8d69-4337-b6c9-f64f54cf1157"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"><![CDATA[QUERY]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="ACCES" mc="Standard.AttributeLink" uid="1954ee7d-1258-4e4e-a7a2-89e98d7174a5"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"><![CDATA[ACCES]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Infrastructure.Note" uid="e78d0e31-858c-467f-9f64-bd1158fbbfec"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[<Enter note text here>]]></ATT>
+                        <ATT name="MimeType"></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Infrastructure.Note" uid="5fa0b97b-5f9d-426a-a257-5b78b42aed8e"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[<Enter note text here>]]></ATT>
+                  <ATT name="MimeType"></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="QUERY" mc="Standard.Instance" uid="5430ae7f-48d2-4287-9714-bc1adc8ff027"/>
+          <ATTRIBUTES>
+            <ATT name="IsConstant">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="Name"><![CDATA[QUERY]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Slot">
+              <OBJECT>
+                <ID name="QUERY" mc="Standard.AttributeLink" uid="af6cd3d7-cf0d-4840-a1e8-a172c37caf64"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"><![CDATA[QUERY]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <COMPID name="ADMINISTRATOR" mc="Standard.Actor" uid="5f01466b-6a16-4fe6-aa52-8c7e25fd4689"/>
+        <COMPID name="LOGIN" mc="Standard.UseCase" uid="ee6470c1-9f46-474a-a1d4-217dbc2aeada"/>
+        <COMPID name="SALES SYSTEM" mc="Standard.UseCase" uid="5784a512-360e-4dc4-b8bd-a26cc46fc19a"/>
+        <COMPID name="DATA BASE" mc="Standard.UseCase" uid="80642604-7bec-4416-a342-22e59dc1a6d9"/>
+        <COMPID name="EMPLYMENT" mc="Standard.Actor" uid="00a6d6d0-1d96-4b9d-97c1-63feea9b7bb8"/>
+        <COMPID name="CLIENT" mc="Standard.Actor" uid="759dbc0f-2e51-45f9-b684-0a70c7f4c5f8"/>
+        <COMPID name="MAIN CLASS" mc="Standard.Class" uid="dd153fa8-c46d-4272-9c29-0d7073a87934"/>
+        <COMPID name="LOGIN" mc="Standard.Class" uid="e151800a-440f-478c-b300-3e7ae8f43f66"/>
+        <COMPID name="QUERY" mc="Standard.Class" uid="ffd54f65-9038-4291-a569-fed2d3dec4bc"/>
+        <COMPID name="SALES" mc="Standard.Class" uid="87167995-fe4c-4060-843c-d1561a50ff86"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="slaes system Object diagram" mc="Standard.ObjectDiagram" uid="d312c562-8937-497a-9724-ca31c83b03ed"/>
+        <COMPID name="slaes system Use Case diagram" mc="Standard.UseCaseDiagram" uid="f72e4ad3-8893-4187-a99b-7090a2746a29"/>
+        <COMPID name="slaes system Class diagram" mc="Standard.ClassDiagram" uid="2ce5642e-84c3-45a8-b07f-ecd2fba4a0a1"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

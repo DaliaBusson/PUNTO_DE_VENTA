@@ -1,0 +1,69 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Process Bpmn Process diagram" version="4">
+  <OBJECT>
+    <ID name="Process Bpmn Process diagram" mc="Standard.BpmnProcessCollaborationDiagram" uid="ea986a3b-eb00-416c-a231-5e43585ebfed"/>
+    <PID name="BPMN" mc="Standard.BpmnBehavior" uid="16dd3174-b167-429a-94c3-c7c9c19d7373"/>
+    <ATTRIBUTES>
+      <ATT name="UiDataVersion">140</ATT>
+      <ATT name="UiData"><![CDATA[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]]></ATT>
+      <ATT name="Name"><![CDATA[Process Bpmn Process diagram]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Represented">
+        <REFOBJ>
+          <ID name="START SALE" mc="Standard.BpmnStartEvent" uid="ad367ef0-376e-440d-9642-de2c26729062"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="LOGIN" mc="Standard.BpmnLane" uid="ed99bb75-8dd7-4212-954e-16a0ed28abe4"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="AUTENTICATION" mc="Standard.BpmnSubProcess" uid="1aa5ca1b-8b52-43dd-bc0b-ff983d42353a"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="AUTENTICATION" mc="Standard.BpmnSubProcess" uid="7616b473-b456-4369-8f6b-802d8d70a14d"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="SYSTEM MAIN" mc="Standard.BpmnLane" uid="40bebd62-cb28-4876-ace7-a4ce994689dd"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="DATABASE" mc="Standard.BpmnLane" uid="45d8f1e4-ddee-45a1-9165-e694d8370bae"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="END SALE" mc="Standard.BpmnEndEvent" uid="29dafc0a-f9dc-4c82-b403-bd24e76b06ae"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="SALE" mc="Standard.BpmnSubProcess" uid="c8ba5e94-c824-4882-a163-d500b86c68da"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="QUERY" mc="Standard.BpmnSubProcess" uid="3476deef-59d9-4cef-8d25-5bda7e584481"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="PRICE" mc="Standard.BpmnSubProcess" uid="bbb27f40-02b9-4c3c-9356-94a3f0d8a5f7"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="CODE" mc="Standard.BpmnSubProcess" uid="348d4669-0d8d-429b-82e1-8fd2a4f7624b"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="PRINT" mc="Standard.BpmnSubProcess" uid="52805a1b-5c7d-494b-9848-079d7a2b1972"/>
+        </REFOBJ>
+      </LINK>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="581e4d67-63cd-4c11-9000-49b8371a9777"/>
+          <ATTRIBUTES>
+            <ATT name="Content"></ATT>
+            <ATT name="MimeType"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

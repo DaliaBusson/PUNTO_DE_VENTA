@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="SLAES SYSTEM" version="4">
+  <OBJECT>
+    <ID name="SLAES SYSTEM" mc="Standard.Project" uid="f867b5ba-5a3b-41c5-9727-8cbaf0a76093"/>
+    <ATTRIBUTES>
+      <ATT name="ProjectContext"></ATT>
+      <ATT name="ProjectDescr"></ATT>
+      <ATT name="Name"><![CDATA[SLAES SYSTEM]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Model">
+        <COMPID name="slaes system" mc="Standard.Package" uid="ad563d24-43c4-4b2b-9279-a1f3fb636882"/>
+      </COMP>
+      <COMP relation="DiagramRoot">
+        <COMPID name="SLAES SYSTEM" mc="Infrastructure.DiagramSet" uid="48a87379-9746-4fdb-8a68-f43097f530df"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

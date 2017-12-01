@@ -1,0 +1,87 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="slaes system Object diagram" version="4">
+  <OBJECT>
+    <ID name="slaes system Object diagram" mc="Standard.ObjectDiagram" uid="d312c562-8937-497a-9724-ca31c83b03ed"/>
+    <PID name="slaes system" mc="Standard.Package" uid="ad563d24-43c4-4b2b-9279-a1f3fb636882"/>
+    <ATTRIBUTES>
+      <ATT name="UiDataVersion">421</ATT>
+      <ATT name="UiData"><![CDATA[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]]></ATT>
+      <ATT name="Name"><![CDATA[slaes system Object diagram]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Represented">
+        <REFOBJ>
+          <ID name="METOD MAIN" mc="Standard.Instance" uid="22a7f38f-82ed-4ce9-a634-4d167ad6f3bb"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="OPTION" mc="Standard.AttributeLink" uid="74e21362-96d4-4bfe-933a-1b53e35ae121"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="LOGIN" mc="Standard.Instance" uid="a3ce4167-b04d-4ccc-8d38-ec0bccb75b8b"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="SALES" mc="Standard.Instance" uid="f9769a87-02c3-48fd-b329-3066925fb53f"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="NAME" mc="Standard.AttributeLink" uid="4674bf17-bcec-4ef4-a522-34fb2bfc5d18"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="PASWOORD" mc="Standard.AttributeLink" uid="641efc5b-7517-45af-8804-ed6ce50c5159"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="USER" mc="Standard.AttributeLink" uid="865d5bc4-8f7f-47ad-a611-964386c04b6d"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="PRODUCT" mc="Standard.AttributeLink" uid="3de106ac-897d-4bd7-8fd3-99c15d6f1db3"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="PRICE" mc="Standard.AttributeLink" uid="675fcccd-9b21-4801-8846-54d1a4295ea7"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="CODE" mc="Standard.AttributeLink" uid="ec5bf041-53b7-419f-98bd-0bad594b470b"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="TYPE" mc="Standard.AttributeLink" uid="ce5ebe4f-9ca9-4a70-b803-7e2d54dd721b"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="ACCES" mc="Standard.AttributeLink" uid="92816fc9-cac1-46d1-8d81-6584b27a6011"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="QUERY" mc="Standard.Instance" uid="5430ae7f-48d2-4287-9714-bc1adc8ff027"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="QUERY" mc="Standard.AttributeLink" uid="af6cd3d7-cf0d-4840-a1e8-a172c37caf64"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="ACCES" mc="Standard.AttributeLink" uid="8f15949f-1495-4aa9-800f-4b1ca0452035"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="NUMBER_PICES" mc="Standard.AttributeLink" uid="b96f5e6a-4bab-4bfd-839b-11da5cf6dc81"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="QUERY" mc="Standard.AttributeLink" uid="89daf311-8d69-4337-b6c9-f64f54cf1157"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="ACCES" mc="Standard.AttributeLink" uid="1954ee7d-1258-4e4e-a7a2-89e98d7174a5"/>
+        </REFOBJ>
+      </LINK>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="a2b2c100-536f-4a70-a215-66c01d8bf562"/>
+          <ATTRIBUTES>
+            <ATT name="Content"></ATT>
+            <ATT name="MimeType"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
